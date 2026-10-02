@@ -1,8 +1,8 @@
 export const ENDPOINTS = {
-  LOGIN: "/auth/login",
-  SEND_SIGNUP_OTP: "/auth/send-signup-otp",
-  VERIFY_SIGNUP_OTP: "/auth/verify-signup-otp",
-  REFRESH_TOKEN: "/auth/refresh-token",
-  LOGOUT: "/auth/logout",
-  ME: "/users/me",
+  LOGIN: "/v1/auth/login",
+  SEND_SIGNUP_OTP: "/v1/auth/send-signup-otp",
+  VERIFY_SIGNUP_OTP: "/v1/auth/verify-signup-otp",
+  REFRESH_TOKEN: "/v1/auth/refresh-token",
+  LOGOUT: "/v1/auth/logout",
+  ME: "/v1/user/me",
 };

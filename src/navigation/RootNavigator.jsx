@@ -1,11 +1,12 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
+import useAuthStore from "../store/auth.store";
 
 import AuthNavigator from "./AuthNavigator";
 import AppNavigator from "./AppNavigator";
 
 const RootNavigator = () => {
-  const isAuthenticated = false;
+  const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
 
   return (
     <NavigationContainer>
